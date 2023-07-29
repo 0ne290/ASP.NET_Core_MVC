@@ -1,0 +1,15 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MY LAYOUT FROM AREA ADMIN | @ViewBag.Title</title>
+</head>
+<body>
+    <h2>@ViewBag.Title from area admin</h2><!-- Этот параметр могут устанавливать присоединяемые к мастер-странице представления либо действие контроллера -->
+    <div><a href="/Admin/Home/Index">Home from area admin</a> | <a href="/Admin/Home/About">About from area admin</a></div>
+    <div>
+        @RenderBody()<!-- Сюда будут помещаться представления, использующие эту мастер-страницу -->
+    </div>
+</body>
+</html>

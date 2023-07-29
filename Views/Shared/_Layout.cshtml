@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MY LAYOUT | @ViewBag.Title</title>
+    <link rel="stylesheet" href="~/css/Index.css">
+</head>
+<body>
+    <Header>@ViewBag.Header</Header>
+    <Main>
+        <Nav>@Html.Raw(ViewBag.Nav)</Nav>
+        <Article>@RenderBody()</Article>
+        <Aside>@ViewBag.Aside</Aside>
+    </Main>
+    <Footer>@ViewBag.Footer</Footer>
+</body>
+</html>
